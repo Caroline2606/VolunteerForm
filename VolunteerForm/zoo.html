@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Volunteer Form</title>
+	<link rel="stylesheet" href="style_zoo.css">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+	<script>
+		function selectData() {
+			let data = document.getElementById("urodziny").value;
+			window.alert(data + "***UWAGA*** Twoja data urodzenia zostanie poddana weryfikacji na podstawie dowodu osobistego podczas spotkania rekrutacyjnego!");
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>You selected voluneer work in zoo.<br>
+			Please fill in the form.</h1>
+			<img id="arrow" src="Grafika/arrow.png" alt="arrow">
+	</header>
+	<form id="form" action="mailto:zoo.volunteer@gmail.com" method="post">
+		<fieldset id="infP">
+			<legend><h4>INFORMACJE PODSTAWOWE</h4></legend>
+			<p>Imię</p> <input class="pdst" type="text" name="imie" value="" size="30"><br><br>
+			<p>Data urodzenia</p> <input id="urodziny" class="pdst" type="date" name="urodziny" placeholder="rrrr-mm-dd"> 
+								  <button id="dataUr" type="button" onclick="selectData()">Zatwierdź</button><br><br>
+			<p>Wyksztalcenie</p> <select id="wyksz" class="pdst" name="wyksztalcenie">
+			<option value="podstawo1we">Podstawowe</option>
+			<option value="srednie">Średnie (w trakcie nauki)</option>
+			<option value="srednieU">Średnie (ukończone)</option>
+			<option value="wyzsze">Wyższe (w trakcie nauki)</option>
+			<option value="wyzszeU">Wyższe (ukończone)</option>
+			</select><br><br>
+			<label id="praca"><input type="checkbox" name="praca">Pracuję</label><br><br>
+			<label id="nauka"><input type="checkbox" name="nauka">Uczę się</label><br><br>
+			<p>Twoje zdjęcie</p><input id="photo" type="file" name="plik" size="30">
+		</fieldset>
+		<br><br>
+		<fieldset id="kontakt">
+			<legend><h4>KONTAKT</h4></legend>
+			<p>E-mail</p> <input class="kont" type="email" name="email" size="30"><br><br>
+			<p>Numer telefonu</p> <input id="tel" type="number" name="telefon" size="30" maxlength="9"><br><br>
+			<p>Adres zamieszkania</p> <input id="adr" type="text" name="adrZ" size="30"><br><br>
+			<p>Miasto</p> <input id="miasto" type="text" name="miasto" size="30"><br><br>
+			<p>Kod pocztowy</p> <input id="kPoczt" type="text" name="kPoczt" size="30" maxlength="7"><br><br>
+		</fieldset>
+		<br><br>
+		<fieldset id="animals">
+			<legend><h4>ANIMALS</h4></legend>
+			<label id="birds">
+				<label id="papugaR">
+					<input id="parrot_red" type="radio" name="animal" value="parrot">Czerwona Ara<br>
+					<img id="papuga_czer" src="Grafika/parrot_red.jpg" alt="parrot">
+				</label><br><br>
+				<label id="papugaN">
+					<input id="parrot_blue" type="radio" name="animal" value="parrot">Niebieska Ara<br>
+					<img id="papuga_nieb" src="Grafika/parrot_blue.jpg" alt="parrot">
+				</label><br><br>
+				<label id="falista">
+					<input id="parrot_falista" type="radio" name="animal" value="falista">Papuzka Falista<br>
+					<img id="papugaF" src="Grafika/falista.jpg" alt="parrot">
+				</label><br><br>
+			</label>
+
+			<label id="cats">
+				<label id="lew">
+					<input id="cat_lion" type="radio" name="animal" value="lion">Lew<br>
+					<img id="lewC" src="Grafika/lew.jpg" alt="lion">
+				</label><br><br>
+				<label id="gepard">
+					<input id="cat_gepard" type="radio" name="animal" value="gepard">Gepard<br>
+					<img id="gepardC" src="Grafika/gepard.jpg" alt="parrot">
+				</label><br><br>
+				<label id="pantera">
+					<input id="cat_pantera" type="radio" name="animal" value="pantera">Pantera<br>
+					<img id="panteraC" src="Grafika/pantera.jpg" alt="pantera">
+				</label><br><br>
+			</label>
+
+			<label id="sea">
+				<label id="delfin">
+					<input id="sea_delfin" type="radio" name="animal" value="delfin">Delfin<br>
+					<img id="delfinS" src="Grafika/delfin.jpg" alt="delfin">
+				</label><br><br>
+				<label id="foka">
+					<input id="sea_foka" type="radio" name="animal" value="foka">Foka<br>
+					<img id="fokaS" src="Grafika/foka.jpg" alt="foka">
+				</label><br><br>
+				<label id="pingwin">
+					<input id="sea_pingwin" type="radio" name="animal" value="pingwin">Pingwin<br>
+					<img id="pingwinS" src="Grafika/pingwin.jpg" alt="pingwin">
+				</label><br><br>
+			</label>
+
+			<label id="land">
+				<label id="zyrafa">
+					<input id="land_zyrafa" type="radio" name="animal" value="zyrafa">Żyrafa<br>
+					<img id="zyrafaL" src="Grafika/żyrafa.jpg" alt="zyrafa">
+				</label><br><br>
+				<label id="slon">
+					<input id="land_slon" type="radio" name="animal" value="slon">Słoń<br>
+					<img id="slonL" src="Grafika/słoń.jpg" alt="slon">
+				</label><br><br>
+				<label id="zebra">
+					<input id="land_zebra" type="radio" name="animal" value="zebra">Zebra<br>
+					<img id="zebraL" src="Grafika/zebra.jpg" alt="zebra">
+				</label><br><br>
+			</label>
+		</fieldset>
+		<br><br>
+		<fieldset id="agreement">
+			<legend><h4>ZGODA</h4></legend>
+			<label id="zatwierdz"><input type="checkbox" name="zatwierdz">Zgadzam się na przetwarzanie moich danych osobowych</label><br><br>
+			<label id="zatwierdz_2"><input type="checkbox" name="zatwierdz">Zgadzam się na udostępnianie wizerunku w celu rozwoju programu zoo&animalShelter</label><br><br>
+		</fieldset>
+		<br><br>
+		<fieldset id="send">
+			<button id="button" type="submit" value="send">SEND THE FORM</button>
+		</fieldset>
+	</form>
+</body>
+</html>

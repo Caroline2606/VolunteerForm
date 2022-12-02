@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Volunteer Form</title>
+	<link rel="stylesheet" href="style_shelter.css">
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+	<script>
+		function selectData() {
+			let data = document.getElementById("urodziny").value;
+			window.alert(data + "***UWAGA*** Twoja data urodzenia zostanie poddana weryfikacji na podstawie dowodu osobistego podczas spotkania rekrutacyjnego!");
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>You selected voluneer work in shelter.<br>
+			Please fill in the form.</h1>
+			<img id="arrow" src="Grafika/arrow.png" alt="arrow">
+	</header>
+	<form id="form" action="mailto:zoo.volunteer@gmail.com" method="post">
+		<fieldset id="infP">
+			<legend><h4>INFORMACJE PODSTAWOWE</h4></legend>
+			<p>Imię</p> <input class="pdst" type="text" name="imie" value="" size="30"><br><br>
+			<p>Data urodzenia</p> <input id="urodziny" class="pdst" type="date" name="urodziny" placeholder="rrrr-mm-dd"> 
+								  <button id="dataUr" type="button" onclick="selectData()">Zatwierdź</button><br><br>
+			<p>Wyksztalcenie</p> <select id="wyksz" class="pdst" name="wyksztalcenie">
+			<option value="podstawo1we">Podstawowe</option>
+			<option value="srednie">Średnie (w trakcie nauki)</option>
+			<option value="srednieU">Średnie (ukończone)</option>
+			<option value="wyzsze">Wyższe (w trakcie nauki)</option>
+			<option value="wyzszeU">Wyższe (ukończone)</option>
+			</select><br><br>
+			<label id="praca"><input type="checkbox" name="praca">Pracuję</label><br><br>
+			<label id="nauka"><input type="checkbox" name="nauka">Uczę się</label><br><br>
+			<p>Twoje zdjęcie</p><input id="photo" type="file" name="plik" size="30">
+		</fieldset>
+		<br><br>
+		<fieldset id="kontakt">
+			<legend><h4>KONTAKT</h4></legend>
+			<p>E-mail</p> <input class="kont" type="email" name="email" size="30"><br><br>
+			<p>Numer telefonu</p> <input id="tel" type="number" name="telefon" size="30" maxlength="9"><br><br>
+			<p>Adres zamieszkania</p> <input id="adr" type="text" name="adrZ" size="30"><br><br>
+			<p>Miasto</p> <input id="miasto" type="text" name="miasto" size="30"><br><br>
+			<p>Kod pocztowy</p> <input id="kPoczt" type="text" name="kPoczt" size="30" maxlength="7"><br><br>
+		</fieldset>
+		<br><br>
+		<fieldset id="animals">
+			<legend><h4>ANIMALS</h4></legend>
+			<label id="birds">
+				<label id="kura">
+					<input id="kura_bird" type="radio" name="animal" value="kura">Kura<br>
+					<img id="kuraB" src="Grafika/kura.jpg" alt="kura">
+				</label><br><br>
+				<label id="kaczka">
+					<input id="kaczka_bird" type="radio" name="animal" value="kaczka">Kaczka<br>
+					<img id="kaczkaB" src="Grafika/kaczka.jpg" alt="kaczka">
+				</label><br><br>
+				<label id="ges">
+					<input id="ges_bird" type="radio" name="animal" value="ges">Gęś<br>
+					<img id="gesB" src="Grafika/gęś.jpg" alt="gęś">
+				</label><br><br>
+			</label>
+
+			<label id="cats">
+				<label id="bialy">
+					<input id="cat_bialy" type="radio" name="animal" value="bialy">Biały kotek<br>
+					<img id="bialyC" src="Grafika/bialy.jpg" alt="bialy">
+				</label><br><br>
+				<label id="czarny">
+					<input id="cat_czarny" type="radio" name="animal" value="czarny">Czarny kotek<br>
+					<img id="czarnyC" src="Grafika/czarny.jpg" alt="czarny">
+				</label><br><br>
+				<label id="rudy">
+					<input id="cat_rudy" type="radio" name="animal" value="rudy">Rudy kotek<br>
+					<img id="rudyC" src="Grafika/rudy.jpg" alt="rudy">
+				</label><br><br>
+			</label>
+
+			<label id="akwarium">
+				<label id="welonka">
+					<input id="akwarium_welonka" type="radio" name="animal" value="welonka">Złota rybka<br>
+					<img id="welonkaA" src="Grafika/welonka.jpg" alt="welonka">
+				</label><br><br>
+				<label id="bojownik">
+					<input id="akwarium_bojownik" type="radio" name="animal" value="bojownik">Bojownik<br>
+					<img id="bojownikA" src="Grafika/bojownik.jpg" alt="bojownik">
+				</label><br><br>
+				<label id="cytrynka">
+					<input id="akwarium_cytrynka" type="radio" name="animal" value="cytrynka">Cytrynka<br>
+					<img id="cytrynkaA" src="Grafika/cytrynka.jpg" alt="cytrynka">
+				</label><br><br>
+			</label>
+
+			<label id="dogs">
+				<label id="golden">
+					<input id="dogs_golden" type="radio" name="animal" value="golden">Golden Retriver<br>
+					<img id="goldenD" src="Grafika/golden.jpg" alt="golden">
+				</label><br><br>
+				<label id="terrier">
+					<input id="dogs_terrier" type="radio" name="animal" value="terrier">Yorkshire Terrier<br>
+					<img id="yorkD" src="Grafika/terrier.jpg" alt="terrier">
+				</label><br><br>
+				<label id="bernenski">
+					<input id="dogs_bernenski" type="radio" name="animal" value="bernenski">Berneński Pasterski<br>
+					<img id="bernenskiD" src="Grafika/berneński.jpg" alt="bernenski">
+				</label><br><br>
+			</label>
+		</fieldset>
+		<br><br>
+		<fieldset id="agreement">
+			<legend><h4>ZGODA</h4></legend>
+			<label id="zatwierdz"><input type="checkbox" name="zatwierdz">Zgadzam się na przetwarzanie moich danych osobowych</label><br><br>
+			<label id="zatwierdz_2"><input type="checkbox" name="zatwierdz">Zgadzam się na udostępnianie wizerunku w celu rozwoju programu zoo&animalShelter</label><br><br>
+		</fieldset>
+		<br><br>
+		<fieldset id="send">
+			<button id="button" type="submit" value="send">SEND THE FORM</button>
+		</fieldset>
+	</form>
+</body>
+</html>

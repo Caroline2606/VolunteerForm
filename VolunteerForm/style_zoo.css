@@ -1,0 +1,278 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+header {
+	background-image: url("Grafika/zoo_header.jpg");
+	background-size: cover;
+	font-family: 'Black Ops One', cursive;
+	color: antiquewhite;
+	text-align: center;
+	width: 100%;
+	height: 753px;
+}
+
+#arrow {
+	width: 150px;
+	height: 250px;
+	position: absolute;
+	top: 50%;
+	right: 25%;
+}
+
+h1 {
+	position: absolute;
+	top: 30%;
+	right: 10%;
+}
+
+#form {
+	position: absolute;
+	top: 110%;
+	left: 10%;
+	width: 80%;
+	font-family: 'Black Ops One', cursive;
+	font-size: 18px;
+}
+
+#infP {
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+p {
+	float: left;
+	margin-left: 25%;
+}
+
+.pdst {
+	margin-right: 15%;
+	font-size: 18px;
+	font-family: 'Black Ops One', cursive;
+}
+
+#surname {
+	margin-right: 19%;
+	font-size: 18px;
+}
+
+#urodziny {
+	margin-right: 27.5%;
+	font-size: 18px;
+}
+
+#dataUr {
+	font-size: 18px;
+	font-family: 'Black Ops One', cursive;
+	position: relative;
+	top: 10%;
+	right: 27%;
+}
+
+#wyksz {
+	margin-right: 28%;
+	font-size: 18px;
+}
+
+#praca {
+	margin-right: -1%;
+	font-size: 18px;
+}
+
+#nauka {
+	margin-right: -1%;
+	font-size: 18px;
+}
+
+#photo {
+	margin-right: 21%;
+	font-size: 18px;
+}
+
+#kontakt {
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	padding-top: 5%;
+}
+
+.kont {
+	margin-right: 15%;
+	font-size: 18px;
+	font-family: 'Black Ops One', cursive;
+}
+
+#tel {
+	margin-right: 31%;
+	font-size: 18px;
+}
+
+#adr {
+	margin-right: 27%;
+	font-size: 18px;
+}
+
+#miasto {
+	margin-right: 16.5%;
+	font-size: 18px;
+}
+
+#kPoczt {
+	margin-right: 22%;
+	font-size: 18px;
+}
+
+#animals {
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	padding-top: 5%;
+}
+
+#birds {
+	display: flex;
+}
+
+#papuga_czer {
+	background-image: url("Grafika/parrot_red.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#papuga_nieb {
+	background-image: url("Grafika/parrot_red.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#papugaF {
+	background-image: url("Grafika/falista.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#papugaR, #papugaN, #falista {
+	padding-right: 5%;
+	padding-left: 10%;
+}
+
+#cats {
+	display: flex;
+}
+
+#lewC {
+	background-image: url("Grafika/lew.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#gepardC {
+	background-image: url("Grafika/gepard.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#panteraC {
+	background-image: url("Grafika/pantera.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#lew, #gepard, #pantera {
+	padding-right: 5%;
+	padding-left: 10%;
+}
+
+#sea {
+	display: flex;
+}
+
+#delfinS {
+	background-image: url("Grafika/delfin.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#fokaS {
+	background-image: url("Grafika/foka.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#pingwinS {
+	background-image: url("Grafika/pingwin.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#delfin, #foka, #pingwin {
+	padding-right: 5%;
+	padding-left: 10%;
+}
+
+#land {
+	display: flex;
+}
+
+#zyrafaL {
+	background-image: url("Grafika/żyrafa.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#slonL {
+	background-image: url("Grafika/słoń.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#zebraL {
+	background-image: url("Grafika/zebra.jpg");
+	background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+#zyrafa, #slon, #zebra {
+	padding-right: 5%;
+	padding-left: 10%;
+}
+
+#zatwierdz, #zatwierdz_2 {
+	font-size: 18px;
+}
+
+#agreement {
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	padding-top: 5%;
+}
+
+#send {
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#button {
+	font-family: 'Black Ops One', cursive;
+	font-size: 18px;
+}
